@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @resume.name %>
+</p>
+
+<p>
+  <strong>Resume name:</strong>
+  <%= @resume.resume_name %>
+</p>
+
+<p>
+  <strong>Resume file size:</strong>
+  <%= @resume.resume_file_size %>
+</p>
+
+<%= image_tag @resume.document.url %>
+
+<%= link_to 'Edit', edit_resume_path(@resume) %> |
+<%= link_to 'Back', resumes_path %>
